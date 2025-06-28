@@ -58,7 +58,7 @@ public class EmployeeService {
         employeeRepository.save(employee);
 
         // Set success response
-        employeeResponse.setStatusCode(HttpStatus.CREATED.value()); // 201
+        employeeResponse.setStatusCode(HttpStatus.OK.value()); // 201
         employeeResponse.setMessage("Employee Saved Successfully!!!!");
         employeeResponse.setData(employee);
 
