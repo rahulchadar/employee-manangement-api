@@ -8,6 +8,8 @@ public class APIResponse<T> { // Generic wrapper class for API responses
 	private int statusCode; // HTTP status code to indicate response status
 	private String message; // Response message providing additional context
 	private T Data; // Generic data field to hold response payload (e.g., entity or list)
+	
+	private String date;
 
 	public int getStatusCode() { // Getter for statusCode
 		return statusCode;
