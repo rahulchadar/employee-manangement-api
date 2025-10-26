@@ -226,10 +226,12 @@ public class AdminController {
     @PutMapping("/setClientPassword") // Handles HTTP PUT requests to /client/setClientPassword
     public APIResponse<Client> setClientPassword(@RequestBody SetPasswordRequest setPasswordRequest) {
         
+    	// return the response
         return clientService.setPassword(setPasswordRequest); // Calls service to set password for a client
     }
 
 
+    
     
     
 
